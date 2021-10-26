@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% load static %}
+{% static "images" as baseUrl %}
+
+{% block  content %}
+  <h2>
+  payments with
+  </h2>
+
+  <input type="radio" id="credit card" name="cradit card" value="cradit card" >
+ <label for="cradit card"> Cradi card <br>
+  
+ <input type="redio"  id="debit card" name="cared typr" value="debit card">
+ <label for="debit card"> Debit card</label>
+{% endblock %}  

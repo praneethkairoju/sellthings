@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% load static %}
+{% static "images" as baseUrl %}
+
+
+{% block  content %}
+<div class="container">
+    <h2>My orders</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Image</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">quantity</th>
+        <th scope="col">Total price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><img src="{% static 'images/image1.jpg' %}" alt="" width="200px" height="20%"></td>
+        <td>Doors</td>
+        <td>952</td>
+        <td>1</td>
+        <td>952</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+{% endblock %}  
